@@ -1,5 +1,5 @@
 <div class="bg-primary">
-    <div class="container d-flex justify-content-end text-white ">
+    <div class="container d-flex justify-content-end text-white">
         Additional DC SITES <i class="fa-solid fa-caret-down mt-1 px-1 "></i>
     </div>
 
@@ -10,10 +10,13 @@
             <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="logo">
         </div>
         <ul>
-            <li lass="px-3 list-group-item text-uppercase fw-bold">
-                characters
-            </li>
-
+            @foreach ($listnav as $item)
+                <li class="px-3 list-group-item text-uppercase fw-bold">
+                    {{ $item }}
+                </li>
+            @endforeach
         </ul>
+        <input type="text" placeholder="Cerca">
     </div>
+
 </section>

@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $comics = config('db.comics');
     $blueicons = config('blueicons.blueicons');
+    $listnav = config('listnav.listnav');
     //dd($comics);
-    return view('home', compact('comics', 'blueicons'));
+    return view('home', compact('comics', 'blueicons', 'listnav'));
 });
