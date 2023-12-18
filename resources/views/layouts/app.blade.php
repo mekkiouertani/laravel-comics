@@ -16,8 +16,9 @@
 </head>
 
 <body>
-    @include('partials.header')
-    @include('partials.jumbotron')
+    {{--  @include('partials.header')
+    @include('partials.jumbotron') --}}
+    @include('partials.card')
     @yield('content')
     @include('partials.footer')
 
