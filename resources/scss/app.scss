@@ -11,3 +11,53 @@ $fa-font-path: "../webfonts" !default;
 h1{
     color: $text-color;
 }
+/* NAVBAR */
+#head-nav {
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #444444;
+    }
+     .box-logo{
+        margin-left: 30px;
+        min-width: 100px;
+        height: 100px;
+        img{
+            max-width: 100%;
+        }
+    }
+   ul{
+        display: flex;
+        justify-content: end;
+        flex-wrap: wrap;
+        gap: 5px;
+        list-style: none;
+    }
+       li{
+        &:hover{
+            color: #0282f9;
+            cursor: pointer;
+            border-bottom: 1px solid #0282f9;
+        }
+    }
+    };
+    /* JUMBOTRON */
+    #jumbotron{
+        .jumbotron {
+            width: 100%;
+            height: 400px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+
+        section {
+            padding: 20px;
+        }
+    }
+
