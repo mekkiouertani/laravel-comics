@@ -16,3 +16,25 @@
         </section>
     </div>
 </section>
+{{-- FOOTER --}}
+<section id="foot">
+    <div class="container d-flex justify-content-between p-0 mt-5">
+        <div class="left">
+            <ul class="mt-1" id="foot2">
+                @foreach ($footer as $item)
+                    <li id="lifoot">
+                        <h4 class="text-uppercase"> {{ $item['title'] }}</h4>
+                        <div class="text-secondary d-flex flex-column ">
+                            @foreach ($item['listItems'] as $listItem)
+                                {{ $listItem }}
+                            @endforeach
+                        </div>
+                    </li>
+                @endforeach
+            </ul>
+        </div>
+        <div class="right">
+            <img src="{{ Vite::asset('../resources/img/dc-logo-bg.png') }}" alt="">
+        </div>
+    </div>
+</section>

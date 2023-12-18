@@ -17,6 +17,7 @@ Route::get('/', function () {
     $comics = config('db.comics');
     $blueicons = config('blueicons.blueicons');
     $listnav = config('listnav.listnav');
+    $footer = config('footer.footerList');
     //dd($comics);
-    return view('home', compact('comics', 'blueicons', 'listnav'));
+    return view('home', compact('comics', 'blueicons', 'listnav', 'footer'));
 });

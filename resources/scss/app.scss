@@ -117,3 +117,22 @@ h1{
         flex-wrap: wrap;
       }
 }
+/* FOOT */
+#foot{
+        background-image: url(../img/footer-bg.jpg);
+        overflow: hidden;
+        color: white;
+        max-height: 400px;
+}
+    #foot2{
+        list-style: none;
+        width: 500px;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-content: start;
+        align-items: start;
+    }
+        #lifoot {
+            padding: 20px 30px 0px 20px;
+        }
+
