@@ -7,7 +7,7 @@
 <section id="head-nav">
     <div class="container d-flex py-3">
         <div class="box-logo">
-            {{-- <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt=""> --}}
+            <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="logo">
         </div>
         <ul>
             <li lass="px-3 list-group-item text-uppercase fw-bold">
