@@ -110,6 +110,83 @@ return [
             "sale_date" => "2019-04-10",
             "type" => "graphic novel",
         ]
-    ]
+    ],
+    'blueicons' => [
+        [
+            'text' => 'digital comics',
+            'img' => '../resources/img/buy-comics-digital-comics.png',
+        ],
+        [
+            'text' => 'dc merchandise',
+            'img' => '../../resources/img/buy-comics-merchandise.png',
+        ],
+        [
+            'text' => 'subscription',
+            'img' => '../../resources/img/buy-comics-subscriptions.png',
+        ],
+        [
+            'text' => 'comic shop locator',
+            'img' => '../../resources/img/buy-comics-shop-locator.png',
+        ],
+        [
+            'text' => 'dc power visa',
+            'img' => '../../resources/img/buy-dc-power-visa.svg',
+        ],
+    ],
+    'footerList' => [
+        [
+            'title' => 'dc comics',
+            'listItems' => [
+                'Characters',
+                'Comics',
+                'Movies',
+                'Tv',
+                'Games',
+                'Video',
+                'News',
+            ],
+        ],
+        [
+            'title' => 'dc',
+            'listItems' => [
+                'Characters',
+                'Comics',
+                'Movies',
+                'Tv',
+                'Games',
+                'Video',
+            ],
+        ],
+        [
+            'title' => 'sites',
+            'listItems' => [
+                'Characters',
+                'Comics',
+                'Movies',
+                'Tv',
+                'Characters',
+                'Comics',
+                'Movies',
+            ],
+        ],
+        [
+            'title' => 'shop',
+            'listItems' => [
+                'Characters',
+                'Comics',
+            ],
+        ],
+    ],
+    'listnav' => [
+        "characters",
+        "comics",
+        "movies",
+        "tv",
+        "games",
+        "videos",
+        "fan",
+        "news",
+        "shop",
+    ],
 ];
 

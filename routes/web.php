@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $comics = config('db.comics');
-    $blueicons = config('blueicons.blueicons');
-    $listnav = config('listnav.listnav');
-    $footer = config('footer.footerList');
+    $blueicons = config('db.blueicons');
+    $listnav = config('db.listnav');
+    $footer = config('db.footerList');
     //dd($comics);
     return view('home', compact('comics', 'blueicons', 'listnav', 'footer'));
 });

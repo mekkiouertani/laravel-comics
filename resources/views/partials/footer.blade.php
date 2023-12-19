@@ -20,11 +20,11 @@
 <section id="foot">
     <div class="container d-flex justify-content-between p-0 mt-5">
         <div class="left">
-            <ul class="mt-1" id="foot2">
+            <ul class="mt-1 " id="foot2">
                 @foreach ($footer as $item)
-                    <li id="lifoot">
+                    <li id="lifoot" class="d-flex flex-column">
                         <h4 class="text-uppercase"> {{ $item['title'] }}</h4>
-                        <div class="text-secondary d-flex flex-column ">
+                        <div class="text-secondary">
                             @foreach ($item['listItems'] as $listItem)
                                 {{ $listItem }}
                             @endforeach
