@@ -1,10 +1,10 @@
 @extends('layouts.appshow')
-@section('title', 'template')
+@section('title', 'Info Comic')
 
 @section('content')
     <section id="show">
         <div class="bg-primary  position-relative ">
-            <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}" class="position-absolute top-50 w-25 ">
+            <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}" class="position-absolute w-25 ">
             {{--  <div class="position-absolute end-0 ">
                 {{ $comic['series'] }}
             </div> --}}
