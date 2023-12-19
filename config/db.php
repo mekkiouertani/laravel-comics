@@ -178,8 +178,8 @@ return [
         ],
     ],
     'listnav' => [
-        "characters",
-        "comics",
+        "home",
+        "cards",
         "movies",
         "tv",
         "games",

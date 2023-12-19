@@ -1,3 +1,4 @@
+{{-- SECTION BLUE ICONS --}}
 <section id="blue-icons">
     <div id="all-top-main">
         <section id="bottom" class="p-3">
@@ -16,7 +17,7 @@
         </section>
     </div>
 </section>
-{{-- FOOTER --}}
+{{-- FOOTER LIST UL --}}
 <section id="foot">
     <div class="container d-flex justify-content-between ">
         <div class="left">

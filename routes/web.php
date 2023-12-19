@@ -16,8 +16,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $comics = config('db.comics');
     $blueicons = config('db.blueicons');
-    $listnav = config('db.listnav');
     $footer = config('db.footerList');
     //dd($comics);
-    return view('home', compact('comics', 'blueicons', 'listnav', 'footer'));
-});
+    return view('home', compact('comics', 'blueicons', 'footer'));
+})->name('home');
+
+Route::get('/show/{index}', function ($id) {
+    $comics = config('db.comics');
+    if ($id >= 0 && $id < count($comics)) {
+        $comic = $comics[$id];
+        $blueicons = config('db.blueicons');
+        $footer = config('db.footerList');
+        return view('pages.show', compact('comic', 'comics', 'blueicons', 'footer'));
+    } else {
+        abort(404);
+    }
+})->name('pages.show');
