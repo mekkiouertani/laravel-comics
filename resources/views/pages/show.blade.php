@@ -1,15 +1,21 @@
 @extends('layouts.app')
-@include('partials.header')
-@include('partials.jumbotron')
+@section('title', 'template')
 
-<section id="show">
-    <div class="bg-primary  position-relative ">
-        <div class="container">
-            <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}" class="position-absolute top-50 w-25">
+@section('content')
+    <section id="show">
+        <div class="bg-primary  position-relative ">
+            <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}" class="position-absolute top-50 w-25 ">
+            {{--  <div class="position-absolute end-0 ">
+                {{ $comic['series'] }}
+            </div> --}}
         </div>
-    </div>
-    <main class="container ">
-        <h2 class="align-end">{{ $comic['title'] }}</h2>
-
-    </main>
-</section>
+        <main class="container mt-4">
+            <div class="bg-success d-flex justify-content-between align-items-center p-2 text-white fs-2">
+                <span>U.S. Price: {{ $comic['price'] }}</span>
+                <span>{{ $comic['type'] }}</span>
+            </div>
+            <h2 class="">{{ $comic['title'] }}</h2>
+            <p>{{ $comic['description'] }}</p>
+        </main>
+    </section>
+@endsection
