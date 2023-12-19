@@ -18,17 +18,17 @@
 </section>
 {{-- FOOTER --}}
 <section id="foot">
-    <div class="container d-flex justify-content-between p-0 mt-5">
+    <div class="container d-flex justify-content-between ">
         <div class="left">
-            <ul class="mt-1 " id="foot2">
+            <ul class="mt-1 d-flex pb-5 " id="foot2">
                 @foreach ($footer as $item)
-                    <li id="lifoot" class="d-flex flex-column">
+                    <li id="lifoot">
                         <h4 class="text-uppercase"> {{ $item['title'] }}</h4>
-                        <div class="text-secondary">
+                        <ul class="text-secondary list-unstyled ">
                             @foreach ($item['listItems'] as $listItem)
-                                {{ $listItem }}
+                                <li> {{ $listItem }}</li>
                             @endforeach
-                        </div>
+                        </ul>
                     </li>
                 @endforeach
             </ul>
