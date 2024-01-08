@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ComicController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,7 +22,7 @@ Route::get('/', function () {
     return view('home', compact('comics', 'blueicons', 'footer'));
 })->name('home');
 
-Route::get('/show/{index}', function ($id) {
+/* Route::get('/show/{index}', function ($id) {
     $comics = config('db.comics');
     if ($id >= 0 && $id < count($comics)) {
         $comic = $comics[$id];
@@ -32,3 +33,13 @@ Route::get('/show/{index}', function ($id) {
         abort(404);
     }
 })->name('pages.show');
+ */
+Route::resource('comics', ComicController::class);
+
+/* Route::resource('comics', ComicController::class)->except([
+    'create',
+    'store',
+    'update',
+    'destroy',
+]);
+ */
